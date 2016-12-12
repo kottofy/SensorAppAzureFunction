@@ -26,6 +26,7 @@ public static void Run(string myEventHubMessage, TraceWriter log)
 public class SensorReading
 {
     public int Id { get; set; }
+    public string DeviceId { get; set; }
     public string SensorName { get; set; }
     public string SensorType { get; set; }
     public string SensorValue { get; set; }
