@@ -5,8 +5,8 @@
             "type": "eventHubTrigger",
             "name": "myEventHubMessage",
             "direction": "in",
-            "path": "samples-workitems",
-            "connection": ""
+            "path": "kristinottofyscaledhub",
+            "connection": "kristenIoTHub"
         }
     ]
 }
