@@ -24,7 +24,7 @@ public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
             log.Info(s.SensorType + " : " + s.SensorValue);            
         }
 
-        return req.CreateResponse(HttpStatusCode.OK, JsonConvert.SerializeObject(myQuery));
+        return req.CreateResponse(HttpStatusCode.OK, JsonConvert.SerializeObject(myQuery),new System.Net.Http.Headers.MediaTypeHeaderValue("application/json"));
     }
 
 }
