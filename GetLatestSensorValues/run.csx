@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Net;
+using System.Text;
 
 public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
 {
@@ -24,7 +25,13 @@ public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
             log.Info(s.SensorType + " : " + s.SensorValue);            
         }
 
-        return req.CreateResponse(HttpStatusCode.OK, JsonConvert.SerializeObject(myQuery),new System.Net.Http.Headers.MediaTypeHeaderValue("application/json"));
+        var result = JsonConvert.SerializeObject(myQuery);
+
+        var response = new HttpResponseMessage(HttpStatusCode.OK)
+            {
+                Content = new StringContent(result, Encoding.UTF8, "application/json")
+            };
+        return response;
     }
 
 }
