@@ -13,13 +13,6 @@
             "direction": "out",
             "name": "res"
         }
-        // {
-        //     "type": "table",
-        //     "name": "inTable",
-        //     "tableName": "person",
-        //     "connection": "",
-        //     "direction": "in"
-        // }
     ],
     "disabled": false
 }
