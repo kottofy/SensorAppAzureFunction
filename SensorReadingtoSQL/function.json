@@ -1,12 +1,12 @@
 ﻿{
     "disabled": false,
     "bindings": [
-        {
-            "type": "eventHubTrigger",
-            "name": "myEventHubMessage",
-            "direction": "in",
-            "path": "kristinottofyhub",
-            "connection": "eventhubconnectionstring"
-        }
+      {
+        "type": "eventHubTrigger",
+        "name": "myEventHubMessage",
+        "direction": "in",
+        "path": "iothub-ehub-kristinott-73979-d54e092bae",
+        "connection": "eventhubconnectionstring"
+      }
     ]
 }
