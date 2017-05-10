@@ -5,7 +5,7 @@
         "type": "eventHubTrigger",
         "name": "myEventHubMessage",
         "direction": "in",
-        "path": "sensorapp",
+        "path": "sensorappeventhub",
         "connection": "eventhubconnectionstring"
       }
     ]
