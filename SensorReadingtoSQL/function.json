@@ -6,7 +6,7 @@
             "name": "myEventHubMessage",
             "direction": "in",
             "path": "kristinottofyhub",
-            "connection": "connectionstring"
+            "connection": "eventhubconnectionstring"
         }
     ]
 }
