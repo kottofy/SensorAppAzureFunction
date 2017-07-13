@@ -5,7 +5,7 @@
         "type": "eventHubTrigger",
         "name": "myEventHubMessage",
         "direction": "in",
-        "path": "iothub-ehub-kristinott-73979-d54e092bae",
+        "path": "kristinottofyremotemonito-operationmonitoring",
         "connection": "eventhubconnectionstring"
       }
     ]
